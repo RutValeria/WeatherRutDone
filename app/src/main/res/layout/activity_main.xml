@@ -1,0 +1,154 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:text="Тема"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!-- Время и расположение города -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Поисковая строка -->
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="215dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="Введите город"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Переключатель температуры -->
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Поиск"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="2dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Иконка погоды -->
+
+    <Switch
+        android:id="@+id/switch_temp_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:text="°C/°F"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/weather_icon" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Город"
+        android:textSize="28sp"
+    android:layout_marginTop="1dp"
+    android:layout_centerHorizontal="true" />
+
+    <!-- Отображение температуры -->
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--,- °C"
+        android:textSize="60sp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="16dp"
+    android:gravity="center" />
+
+    <!-- Описание погоды -->
+    <TextView
+        android:id="@+id/tv_weather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ясное небо"
+        android:textSize="22sp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="8dp"
+    android:gravity="center" />
+
+    <!-- Прогноз -->
+    <TextView
+        android:id="@+id/tv_wind_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ветер: Север"
+        android:textSize="22sp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="8dp"
+    android:gravity="center" />
+
+    <!-- Влажность, направление ветра и скорость -->
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Влажность: --%"
+        android:textSize="22sp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="8dp"
+    android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скорость ветра: -- м/с"
+        android:textSize="22sp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="8dp"
+    android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_feels_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ощущается как: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+    android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_sunrise_sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Восход и закат: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+    android:layout_marginTop="8dp"/>
+
+    <!-- Кнопка для поиска -->
+</LinearLayout>

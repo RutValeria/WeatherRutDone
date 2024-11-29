@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeatherRut" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#2C3E50</item>
+        <item name="colorPrimaryDark">#1A252F</item>
+        <item name="colorAccent">#16A085</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#034941</item>
+    </style>
+</resources>

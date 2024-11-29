@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeatherRut</string>
+    <string name="weather_icon">Weather icon</string>
+</resources>
